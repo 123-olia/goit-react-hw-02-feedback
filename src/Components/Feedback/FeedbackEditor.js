@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Feedback.module.scss";
+import PropTypes from "prop-types";
 
 const FeedbackEditor = ({ onClickGood, onClickNeutral, onClickBad }) => (
   <div>
@@ -18,3 +19,9 @@ const FeedbackEditor = ({ onClickGood, onClickNeutral, onClickBad }) => (
 );
 
 export default FeedbackEditor;
+
+FeedbackEditor.propTypes = {
+  onClickGood: PropTypes.func,
+  onClickNeutral: PropTypes.func,
+  onClickBad: PropTypes.func,
+};

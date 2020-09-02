@@ -14,7 +14,6 @@ export default class App extends Component {
   };
 
   onGood = () => {
-    // console.log(this.state.good);
     this.setState((prevState) => {
       return {
         good: prevState.good + 1,
@@ -25,8 +24,6 @@ export default class App extends Component {
   };
 
   onNeutral = () => {
-    // console.log(this.state.neutral);
-
     this.setState((prevState) => {
       return {
         neutral: prevState.neutral + 1,
@@ -37,8 +34,6 @@ export default class App extends Component {
   };
 
   onBad = () => {
-    // console.log(this.state.bad);
-
     this.setState((prevState) => {
       return {
         bad: prevState.bad + 1,
@@ -50,7 +45,6 @@ export default class App extends Component {
 
   countTotalFeedback = () => {
     let total = Object.values(this.state).reduce((a, b) => a + b, 0);
-    // console.log(total);
     return total;
   };
 
